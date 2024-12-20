@@ -16,7 +16,7 @@ $userId = $_SESSION['user_id'];
 
 // Fetch user's active appointments
 $stmt = $pdo->prepare("SELECT * FROM appointments WHERE user_id = ?");
-$stmt->execute(params: [$userId]);
+$stmt->execute([$userId]);
 $appointments = $stmt->fetchAll();
 ?>
 
@@ -25,14 +25,15 @@ $appointments = $stmt->fetchAll();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Dashboard</title>
+    <title>Dashboard - Appointment</title>
     <link rel="stylesheet" href="dashboard.css">
+    <link rel="icon" type="image/x-icon" href="images/Slogo.png">
 </head>
 <body>
-    <header>
-      
-    </header>
-    <main>
+
+<img src="images/Slogo.png" alt="Clinic Logo" class="logo">
+    
+<main>
         <div class="container">
             <h1>My Appointments</h1>
             <table>

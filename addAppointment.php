@@ -35,14 +35,16 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Dashboard</title>
-    <link rel="stylesheet" href="dashboard.css">
+    <title>Dashboard - New Appointment </title>
+    <link rel="stylesheet" href="addapp.css">
+    <link rel="icon" type="image/x-icon" href="images/Slogo.png">
 </head>
 <body>
- 
+
+<img src="images/Slogo.png" alt="Clinic Logo" class="logo">
     <main>
         <div class="container">
-            <h2>New Appointment</h2>
+            <h2>NEW APPOINTMENT</h2>
             <form method="POST" action="addAppointment.php">
                 <input type="text" name="name" placeholder="Full Name" required>
                 <input type="text" name="phone_number" placeholder="Contact Number" required>
@@ -56,6 +58,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <a href="logout.php"><button type="button">Log Out</button></a>
         </div>
     </main>
+    <footer>
+        <p>&copy; 2024 Samarinians Clinic. All rights reserved.</p>
+    </footer>
     
 </body>
 </html>

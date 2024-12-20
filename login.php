@@ -39,21 +39,19 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Samarinians Clinic - Login</title>
     <link rel="stylesheet" href="login.css">
+    <link rel="icon" type="image/x-icon" href="images/Slogo.png">
     
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="images/Slogo.png" alt="Samarinians Clinic" height="50" weight="55">
-            <span class="title">SAMARINIANS DENTAL CLINIC</span>
-        </div>
-   
-    </header>
-    <main>
+
+
+<img src="images/Slogo.png" alt="Clinic Logo" class="logo">
+    
+<main>
         <div class="container">
             <form method="POST" action="login.php">
-                <h2>Log In</h2>
-                <input type="text" name="identifier" placeholder="Username or E" required>
+                <h2>LOG IN</h2>
+                <input type="text" name="identifier" placeholder="Username" required>
                 <input type="password" name="password" placeholder="Password" required>
                 <button type="submit">Log In</button>
             </form>

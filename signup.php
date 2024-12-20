@@ -43,36 +43,31 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 }
 ?>
 
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Samarinians Clinic - Sign Up</title>
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="signup.css">
+    <link rel="icon" type="image/x-icon" href="images/Slogo.png">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="images/Slogo.png" alt="Samarinians Clinic" height="50" width="55">
-            <span class="title">SAMARINIANS DENTAL CLINIC</span>
-        </div>
-    </header>
+    
+<img src="images/Slogo.png" alt="Clinic Logo" class="logo">
+          
     <main>
-        <div class="container">
-            <form method="POST" action="signup.php">
-                <h2>Sign Up</h2>
-                <input type="text" name="username" placeholder="Username" required>
-                <input type="email" name="email" placeholder="Email Address" required>
-                <input type="password" name="password" placeholder="Password" required>
-                <button type="submit">Sign Up</button>
-            </form>
-            <a href="login.php"><button class="login-btn">Log In</button></a>
-        </div>
-    </main>
+    <div class="container">
+        <form method="POST" action="signup.php">
+            <h2>SIGN UP</h2>
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="email" name="email" placeholder="Email Address" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit">Sign Up</button>
+        </form>
+        <a href="login.php"><button class="login-btn">Log In</button></a>
+    </div>
+</main>
     <footer>
         <p>&copy; 2024 Samarinians Clinic. All rights reserved.</p>
     </footer>

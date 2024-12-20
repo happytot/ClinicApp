@@ -44,7 +44,7 @@ main {
     max-width: 800px;
     text-align: center;
     margin: auto;
-    height: calc(90% - 60px); 
+    height: calc(100% - 60px); 
     display: flex;
     flex-direction: column;
     justify-content: center; 
@@ -81,7 +81,7 @@ table tbody tr:last-of-type {
 /* Form Elements */
 h1, h2 {
     color: #004085;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 
 
